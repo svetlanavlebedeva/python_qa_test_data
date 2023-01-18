@@ -33,30 +33,26 @@ def squares(start, stop):
 generator = squares(1, 10)
 ```
 
-```python
-def letters():
-    yield 'a'
-    yield 'b'
-```
-
 Итераторы это более общее понятние и в общем случае означает объект который явялется наследником класса у которого реализованы методы __next__ и __iter__
 
 ```python
-class Squares(object):
-
-    def __init__(self, start, stop):
-       self.start = start
-       self.stop = stop
-
-    def __iter__(self): 
+class MyNumbers:
+    def __iter__(self):
+        self.a = 1
         return self
 
     def __next__(self):
-       if self.start >= self.stop:
-           raise StopIteration
-       current = self.start * self.start
-       self.start += 1
-       return current
+        if self.a <= 20:
+            x = self.a
+            self.a += 1
+            return x
+        else:
+            raise StopIteration
+            
+            
+myclass = MyNumbers()
+myiter = iter(myclass)
 
-iterator = Squares(1, 10)
+for x in myiter:
+    print(x)
 ```
