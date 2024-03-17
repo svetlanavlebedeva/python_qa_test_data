@@ -15,7 +15,7 @@ with open(CSV_FILE_PATH, newline='') as f:
 
 print(100 * "+")
 
-with open('../files/users.csv', newline='') as f:
+with open(CSV_FILE_PATH, newline='') as f:
     reader = DictReader(f)
 
     # Итерируемся по данным делая из них словари

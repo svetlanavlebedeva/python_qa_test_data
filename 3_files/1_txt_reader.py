@@ -17,7 +17,4 @@ print(some_file.read())
 # Position cursor within the file
 some_file.seek(0)
 
-# To open it as writable use r+
-# some_file.write("test")
-
 some_file.close()
