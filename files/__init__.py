@@ -10,5 +10,5 @@ def get_path(filename: str):
 TXT_FILE_PATH = get_path(filename="example.txt")
 CSV_FILE_PATH = get_path(filename="users.csv")
 JSON_FILE_PATH = get_path(filename="example.json")
-SQLITE_FILE_PATH = get_path(filename="data.sqlite")
+XML_FILE_PATH = get_path(filename="books.xml")
 JPEG_FILE_PATH = get_path(filename="example.jpeg")

@@ -1,7 +1,9 @@
 import xml.etree.ElementTree as ET
 
+from files import XML_FILE_PATH
+
 # Load and parse the XML file
-tree = ET.parse('example.xml')
+tree = ET.parse(XML_FILE_PATH)
 root = tree.getroot()
 
 # Iterate through each book in the library
