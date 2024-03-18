@@ -1,11 +1,13 @@
 from xml.etree.ElementTree import Element, SubElement, tostring
 from xml.dom.minidom import parseString
 
+
 def prettify(elem):
     """Return a pretty-printed XML string for the Element."""
     rough_string = tostring(elem, 'utf-8')
     reparsed = parseString(rough_string)
     return reparsed.toprettyxml(indent="  ")
+
 
 # Create the base element
 library = Element('library')
