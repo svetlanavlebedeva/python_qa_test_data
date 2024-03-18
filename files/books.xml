@@ -1,0 +1,12 @@
+<library>
+    <book>
+        <title>Learning Python</title>
+        <author>Mark Lutz</author>
+        <year>2013</year>
+    </book>
+    <book>
+        <title>Automate the Boring Stuff with Python</title>
+        <author>Al Sweigart</author>
+        <year>2015</year>
+    </book>
+</library>
