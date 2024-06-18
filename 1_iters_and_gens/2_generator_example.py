@@ -16,5 +16,8 @@ def generate_date_range(start_date, end_date, step_days=1):
 
 start_date = '2023-01-01'
 end_date = '2023-01-10'
-for date in generate_date_range(start_date, end_date, 2):
+
+a = generate_date_range(start_date, end_date, 2)
+
+for date in a:
     print(date)

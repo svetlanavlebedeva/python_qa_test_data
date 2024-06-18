@@ -7,6 +7,6 @@ data = {
     ]
 }
 
-with open("example.json", "w") as f:
-    s = json.dumps(data, indent=4)
-    f.write(s)
+with open("example.json", "a") as f:
+    json.dump(data, f, indent=4)
+

@@ -1,5 +1,3 @@
-import faker
-
 some_file = open("example_write.txt", "w")
 
 text = """Nature's bequest gives nothing but doth lend,

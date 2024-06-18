@@ -14,6 +14,7 @@ with open('eggs.csv', 'w', newline='') as csv_file:
     writer = csv.writer(csv_file, delimiter=',', )
 
     writer.writerow(['id', 'name', 'address', 'ip'])
+
     for number in range(10):
         writer.writerow([str(number).zfill(5), fake.name(), fake.address(), fake.ipv4_public()])
 

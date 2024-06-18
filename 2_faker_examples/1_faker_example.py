@@ -16,4 +16,4 @@ print(f'Russian text: {faker_ru.sentence()}')  # Russian text: В конце к�
 # You can generate more types of data with Russian locale using faker_ru object
 print(f'Russian phone number: {faker_ru.phone_number()}')  # Russian phone number: +7 (910) 123-45-67
 print(f'Russian job: {faker_ru.job()}')  # Russian job
-print(f'Russian company: {faker_ru.company()}')
+print(f'Russian company: {faker_ru.ssn()}')
